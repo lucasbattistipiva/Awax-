@@ -7,7 +7,7 @@
 body{
     font-family: "Montserrat",Arial, Helvetica, sans-serif;
     font-size: 13px;
-    overflow-x: hidden;
+   overflow-x: hidden;
 }
 
 header{
@@ -170,7 +170,7 @@ header{
 
 .default .section-desc{
     font-size: 12px;
-    color: #ccc ;
+    color: #aaa ;
     margin-top: 10px;
     margin-bottom: 40px;
 }
@@ -182,11 +182,18 @@ header{
 }
 
 .default.light{
-    background-color: #F7F7F7;
+    background-color: #e7e5e5;
+
+}
+
+.default.alight{
+    background-color: #FFF;
 }
 
 .default.light .section-title,
-.default.light .section-body{
+.default.light .section-body,
+.default.alight .section-title,
+.default.alight .section-body{
     color: #000000;
 }
 
@@ -269,6 +276,7 @@ CSS de AREAS ESPECIFICAS
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .section-projects--filters{
@@ -302,4 +310,324 @@ CSS de AREAS ESPECIFICAS
 
 .section-projects--filters li:first-child{
     border-left: 0;
+}
+
+.section-projects--photos{
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-projects--photo{
+    width: 280px;
+}
+
+.section-projects--photoarea{
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+}
+
+.section-projects--photoarea img{
+    width: inherit;
+}
+
+.section-projects--photoinfo{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: inherit;
+    height: inherit;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    flex-direction: column;
+}
+
+.section-projects--photoinfo h5{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.section-projects--photoarea:hover .section-projects--photoinfo{
+    display: flex;
+}
+
+.bg-team{
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+
+.section-team-area{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-team{
+    overflow: hidden;
+    max-width: 880px;
+    margin: auto;
+}
+
+.section-team .sliders{
+    height: 100%;
+    width: 1000vw;
+}
+
+.section-team .slide{
+    width: 280px;
+    height: 100%;
+    min-height: 300px;
+    display: inline-block;
+    background-color: #FFF;
+    margin-right: 20px;
+}
+
+.section-team .slidearea{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    color: #000;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+
+
+.section-team-area .sliders-pointers{
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.section-team-area .pointer{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #B28756;
+    border-radius: 8px;
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.section-team-area .pointer.active{
+    background-color: #B28756;
+}
+
+.section-team--avatar{
+    width: 200px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.section-team--name{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 30px;
+}
+.section-team--role{
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 5px;
+}
+.section-team--social{
+    display: flex;
+    margin-top: 20px;
+}
+
+.section-team--social a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 13px;
+    margin-right: 10px;
+}
+
+.section-team--social a:hover{
+    background-color: #B28756;
+}
+
+.section-happyclients{
+    overflow: hidden;
+}
+
+.section-happyclients .sliders{
+    display: flex;
+}
+
+.section-happyclients .slide{
+   flex: 0 0 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.section-happyclients .slidearea{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-happyclients--name{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.section-happyclients--role{
+    font-weight: 600;
+}
+
+.section-happyclients--quote{
+    margin-top: 20px;
+}
+
+.section-happyclients--desc{
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    color: #555;
+}
+
+.section-happyclients .sliders-pointers{
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.section-happyclients .pointer{
+    height: 15px;
+    width: 15px;
+    border: 2px solid #B28756;
+    border-radius: 8px;
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.section-happyclients .pointer:hover,
+.section-happyclients .pointer.active{
+    background-color: #B28756;
+}
+
+.section-company{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.section-company img{
+    margin-right: 40px;
+    margin-left: 40px;
+    object-fit: contain;
+    width: 60px;
+    cursor: pointer;
+}
+
+.section-subs{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    max-width: 1000px ;
+}
+
+.section-subs .box{
+    flex:1;
+    text-align: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    color: #000;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 30px ;
+    background-color: #FFF;
+    
+}
+
+.section-subs--title{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.section-subs--price{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.section-subs--month{
+    font-size: 11px;
+    color: #ccc;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.section-subs--additions{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.section-subs--additions ul,
+.sections-subs--additions li{
+    list-style: none;
+}
+
+.section-subs--additions ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-subs--additions li{
+    line-height: 2.3;
+    font-size:11px;
+    color:#555;
+}
+
+.section-subs--button{
+    display: inline-block;
+    background-color: #333;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+} 
+
+.section-subs--button:hover,
+.section-subs--button.active{
+    background-color:#B28756;
+} 
+
+.section-subs--additions-bar{
+    margin:auto;
+    width: 15px;
+    height: 1px;
+    background-color: #aaa;
 }
