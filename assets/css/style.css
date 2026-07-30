@@ -631,3 +631,73 @@ CSS de AREAS ESPECIFICAS
     height: 1px;
     background-color: #aaa;
 }
+
+.section-premium{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section-premium--package img{
+    flex: 1;
+    height: 280px;
+}
+
+.section-premium--features{
+    width: 100%;
+    max-width: 500px;
+    margin-left: 50px;
+}
+
+.feature-box{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.feature-check{
+    object-fit: contain;
+}
+
+.feature-text{
+    margin-left: 20px;
+}
+
+.feature-text-title{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.feature-text-desc{
+    color: #555;
+}
+
+.section-premium .sliders-pointers{
+    width: 100vw;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.section-premium .pointer{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #B28756;
+    border-radius: 8px;
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.section-premium .pointer.active{
+    background-color: #B28756;
+}
+
+.section-premium .button{
+    display: flex;
+    justify-content: center;
+}
